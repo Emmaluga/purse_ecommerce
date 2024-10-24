@@ -20,7 +20,7 @@ const sendMailFunction = async (options) => {
      html: options.html
    }
 
-   transporter.sendMailFunction(mailOptions, function(err, info){
+   transporter.sendMail(mailOptions, function(err, info){
   
       if(err){
         console.log('not sending')
